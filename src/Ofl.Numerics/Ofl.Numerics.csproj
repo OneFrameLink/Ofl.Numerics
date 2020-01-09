@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Description>Utilities for working with numeric types.</Description>
     <AssemblyName>Ofl.Numerics</AssemblyName>
     <PackageId>Ofl.Numerics</PackageId>
     <PackageProjectUrl>https://github.com/OneFrameLink/Ofl.Numerics</PackageProjectUrl>
     <RepositoryUrl>https://github.com/OneFrameLink/Ofl.Numerics.git</RepositoryUrl>
-    <Version>1.0.0</Version>
+    <Version>2.0.0</Version>
     <PackageTags>numerics biginteger</PackageTags>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-62925-02" PrivateAssets="All" />
   </ItemGroup>
 </Project>

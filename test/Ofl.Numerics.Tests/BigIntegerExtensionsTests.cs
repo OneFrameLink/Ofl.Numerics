@@ -4,7 +4,7 @@ using Xunit;
 
 namespace Ofl.Numerics.Tests
 {
-    public class BigIntegerExtensonsTests
+    public class BigIntegerExtensionsTests
     {
         [Theory]
         [InlineData(1)]
@@ -24,11 +24,11 @@ namespace Ofl.Numerics.Tests
                 for (int index = 0; index < iterations; ++index)
                 {
                     // Add Max value, and 1.  Overflow each time.
-                    intValue += Int32.MaxValue;
+                    intValue += int.MaxValue;
                     intValue += 2;
 
                     // Update bigint.
-                    bigint = (bigint + Int32.MaxValue).Unchecked(4);
+                    bigint = (bigint + int.MaxValue).Unchecked(4);
                     bigint = (bigint + 2).Unchecked(4);
 
                     // Are equal.
@@ -55,11 +55,11 @@ namespace Ofl.Numerics.Tests
                 for (int index = 0; index < iterations; ++index)
                 {
                     // Subtract Max value, and 1.  Overflow each time.
-                    intValue -= Int32.MaxValue;
+                    intValue -= int.MaxValue;
                     intValue -= 2;
 
                     // Update bigint.
-                    bigint = (bigint - Int32.MaxValue).Unchecked(4);
+                    bigint = (bigint - int.MaxValue).Unchecked(4);
                     bigint = (bigint - 2).Unchecked(4);
 
                     // Are equal.
